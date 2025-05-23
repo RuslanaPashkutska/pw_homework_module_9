@@ -26,7 +26,7 @@ def get_author_info(author_url):
 
 def get_quotes(content):
     for quote in content.select(".quote"):
-        text = quote.select_one(".text").text.strip("“”")
+        text = quote.select_one(".text").text.strip('""')
         author = quote.select_one(".author").text
         tags = [tag.text for tag in quote.select(".tags .tag")]
         author_link = quote.select_one("a")["href"]

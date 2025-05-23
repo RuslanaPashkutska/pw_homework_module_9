@@ -1,19 +1,19 @@
-[project]
+[tool.poetry]
 name = "pw-homework-module-9"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "RuslanaPashkutska",email = "ryslana.pashkytska@gmail.com"}
-]
+authors = ["RuslanaPashkutska <ryslana.pashkytska@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "beautifulsoup4 (>=4.13.4,<5.0.0)",
-    "requests (>=2.32.3,<3.0.0)",
-    "playwright (>=1.52.0,<2.0.0)",
-    "scrapy (>=2.13.0,<3.0.0)"
-]
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+beautifulsoup4 = ">=4.13.4,<5.0.0"
+requests = ">=2.32.3,<3.0.0"
+playwright = ">=1.52.0,<2.0.0"
+scrapy = ">=2.13.0,<3.0.0"
+python-dotenv = ">=1.1.0,<2.0.0"
+mongoengine = ">=0.29.1,<0.30.0"
+scrapyscript = { version = "^1.1.5", markers = "python_version >= '3.8' and python_version < '4.0'" }
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
