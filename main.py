@@ -72,6 +72,7 @@ class QuotesSpider(scrapy.Spider):
 
         yield AuthorItem(fullname=fullname, born_date=born_date, born_location=born_location, description=description)
 
+
 if __name__ == "__main__":
     process = CrawlerProcess()
     process.crawl(QuotesSpider)
